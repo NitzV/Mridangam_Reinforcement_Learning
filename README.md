@@ -52,10 +52,10 @@ The task is formally modeled as a 5-tuple discrete MDP $(S, A, P_{\text{trans}},
 ### State Space ($S$)
 A 4-dimensional discrete integer tuple:
 $$s-t = \big( C-{\text{rem}}, P-{\text{phase}}, \text{phrase\-count}, \text{gap\-count} \big)$$
-- **$C_{\text{rem}}$**: Remaining decision steps in the metric cycle ($16 \to 0$).
-- **$P_{\text{phase}}$**: Composition phase ($0 = \text{Purvanga}, 1 = \text{Uttaranga}$).
-- **$\text{phrase\_count}$**: Accumulated steps within the active stroke phrase ($0 \dots 4$).
-- **$\text{gap\_count}$**: Accumulated steps within the active rest gap ($0 \dots 2$).
+- **$C-{\text{rem}}$**: Remaining decision steps in the metric cycle ($16 \to 0$).
+- **$P-{\text{phase}}$**: Composition phase ($0 = \text{Purvanga}, 1 = \text{Uttaranga}$).
+- **$\text{phrase\count}$**: Accumulated steps within the active stroke phrase ($0 \dots 4$).
+- **$\text{gap\count}$**: Accumulated steps within the active rest gap ($0 \dots 2$).
 
 ### Action Space ($A$)
 Five discrete symbolic choices ($a-t \in \{0, 1, 2, 3, 4\}$):
